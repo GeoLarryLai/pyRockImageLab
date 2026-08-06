@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyrockimagelab"
+version = "0.0.1"
+description = "Interactive LR/HR core-photo crop, stitch, and mosaic tools"
+readme = "README-pypi.md"
+authors = [{name = "Larry Syu-Heng Lai", email = "larrysyuhenglai@gmail.com"}]
+license = "AGPL-3.0-or-later"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.20",
+    "opencv-python>=4.5",
+    "Pillow>=8.3",
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+heic = ["pillow-heif>=0.13"]
+gui = ["PyQt5>=5.15"]
+
+[project.urls]
+Homepage = "https://github.com/GeoLarryLai/pyRockImageLab"
+Repository = "https://github.com/GeoLarryLai/pyRockImageLab.git"
+
+[project.scripts]
+pyrockimagelab = "pyrockimagelab.core_box.processing:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyrockimagelab*"]
