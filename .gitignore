@@ -6,3 +6,6 @@ dist/
 build/
 .ipynb_checkpoints/
 .venv/
+.env
+*.env
+.pypirc

@@ -1,14 +1,16 @@
 # pyRockImageLab
 
+v0.0.2
+
 **pyRockImageLab** (`pyrockimagelab`) is intended for **rock photograph** workflows: core-box crop / stitch / mosaic today, with room later for hand samples, outcrop photos, and ML-assisted identification.
 
-This PyPI name is reserved. The package is **under development and not ready for general use** on PyPI yet.
+Development continues and a fuller release is on the way.
 
 ## Release plan
 
-- **Now:** name hold + early development (local / private GitHub).
-- **Next:** public GitHub sync of package + example notebook + docs.
-- **Later:** first usable PyPI release (versioned API) when the core-box tools are stable enough to install and run end-to-end.
+- Early development and documentation are underway.
+- Package, example notebook, and docs will continue to land on GitHub.
+- Versioned PyPI releases will follow as the core-box tools mature.
 
 ## Contact
 

@@ -7,7 +7,7 @@ with open("README-pypi.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="pyrockimagelab",
-    version="0.0.1",
+    version="0.0.2",
     author="Larry Syu-Heng Lai",
     author_email="larrysyuhenglai@gmail.com",
     description="Interactive LR/HR core-photo crop, stitch, and mosaic tools",
@@ -19,7 +19,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.10",
     install_requires=[
         "numpy>=1.20",
         "opencv-python>=4.5",

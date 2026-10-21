@@ -9,17 +9,17 @@ Sources layout (caller-supplied root)::
 ``folder`` and batch ``--root`` / ``core_images_dir`` are **required**.
 There is no package default for CoreImages or any CISR path.
 
-CLI (from project root; conda env ``work``; needs local GUI)::
+CLI (from project root; conda env ``pyrockimagelab``; needs local GUI)::
 
     python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages --help
     python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages
     python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages --lr-only
-    python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages --uwi 30015058530000 --folder 7168-7172
+    python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages --uwi UWI --folder start-end
 
 Library::
 
     from pyrockimagelab import process_folder
-    process_folder(folder="/path/to/.../7168-7172", uwi="30015058530000", ...)
+    process_folder(folder="/path/to/CoreImages/UWI/start-end", uwi="UWI", ...)
 """
 
 import argparse
