@@ -10,7 +10,7 @@ setup(
     version="0.0.2",
     author="Larry Syu-Heng Lai",
     author_email="larrysyuhenglai@gmail.com",
-    description="Interactive LR/HR core-photo crop, stitch, and mosaic tools",
+    description="Interactive tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/GeoLarryLai/pyRockImageLab",

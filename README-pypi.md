@@ -19,4 +19,12 @@ Quantitative Clastics Laboratory, Bureau of Economic Geology, The University of 
 
 ## License
 
+```text
+Program: pyRockImageLab
+Interactive tools for core and outcrop image processing, data
+collection, and automated geological and geomorphic classification and
+analysis
+Copyright (C) 2026  Larry Syu-Heng Lai
+```
+
 GNU Affero General Public License v3 or later. See [LICENSE](LICENSE).

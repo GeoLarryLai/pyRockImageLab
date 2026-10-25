@@ -101,6 +101,14 @@ Optional extras:
 
 ## License
 
+```text
+Program: pyRockImageLab
+Interactive tools for core and outcrop image processing, data
+collection, and automated geological and geomorphic classification and
+analysis
+Copyright (C) 2026  Larry Syu-Heng Lai
+```
+
 pyRockImageLab is licensed under the GNU Affero General Public License 3.0 or later. See [LICENSE](LICENSE).
 
 ## Related
