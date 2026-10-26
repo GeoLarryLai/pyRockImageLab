@@ -11,7 +11,7 @@ v0.0.3
 
 ![QuadPicker crop selection and the cropped core segment](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/figures/ExampleCore_2563-2566_box_crop.png)
 
-*Left: picking the four corners of a core-box segment in QuadPicker. Right: the cropped, ortho-corrected segment (2563–2566 ft, example data in `example_data/ExampleCore`).*
+*Left: picking the four corners of a core-box segment in QuadPicker. Right: the cropped, orthorectified segment (2563–2566 ft, example data in `example_data/ExampleCore`).*
 
 Contact:
 
@@ -49,7 +49,7 @@ Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.236
 
 ## Example notebooks
 
-[`pyRockImageLab_1_ExampleCore.ipynb`](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/pyRockImageLab_1_ExampleCore.ipynb) runs end to end on the small example set in `example_data/ExampleCore/` (one box photo, six close-up photos and saved corner picks, about 15 MB). It crops, stitches and ortho-corrects the close-ups into a high-resolution mosaic of the 2563–2566 ft segment and writes PNGs to `outputs/`. Set `INTERACTIVE = True` to re-pick corners in the Qt windows.
+[`pyRockImageLab_1_ExampleCore.ipynb`](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/pyRockImageLab_1_ExampleCore.ipynb) runs end to end on the small example set in `example_data/ExampleCore/` (one box photo, six close-up photos and saved corner picks, about 15 MB). It crops, stitches and orthorectifies the close-ups into a high-resolution mosaic of the 2563–2566 ft segment and writes PNGs to `outputs/`. Set `INTERACTIVE = True` to re-pick corners in the Qt windows.
 
 ![Cropped close-up photos and the stitched high-resolution mosaic](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/figures/ExampleCore_2563-2566_hr.png)
 
