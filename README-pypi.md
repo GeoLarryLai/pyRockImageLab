@@ -9,9 +9,9 @@ v0.0.3
 > [!NOTE]
 > Filesystem paths are required. The package does not ship defaults for a core-image root or any project-specific folder. Pass `folder`, `core_images_dir`, or `--root` from your notebook or CLI.
 
-![QuadPicker interface for selecting a core-box segment](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/docs/media/quadpicker_ui.png)
+![QuadPicker crop selection and the cropped core segment](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/figures/ExampleCore_2563-2566_box_crop.png)
 
-*Picking the four corners of a core-box segment in QuadPicker (example core box from `example_data/ExampleCore`).*
+*Left: picking the four corners of a core-box segment in QuadPicker. Right: the cropped, ortho-corrected segment (2563–2566 ft, example data in `example_data/ExampleCore`).*
 
 Contact:
 
@@ -51,9 +51,9 @@ Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.236
 
 [`pyRockImageLab_1_ExampleCore.ipynb`](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/pyRockImageLab_1_ExampleCore.ipynb) runs end to end on the small example set in `example_data/ExampleCore/` (one box photo, six close-up photos and saved corner picks, about 15 MB). It crops, stitches and ortho-corrects the close-ups into a high-resolution mosaic of the 2563–2566 ft segment and writes PNGs to `outputs/`. Set `INTERACTIVE = True` to re-pick corners in the Qt windows.
 
-![Box-photo segment and high-resolution mosaic for 2563–2566 ft](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/figures/ExampleCore_2563-2566_hr.png)
+![Cropped close-up photos and the stitched high-resolution mosaic](https://raw.githubusercontent.com/GeoLarryLai/pyRockImageLab/main/figures/ExampleCore_2563-2566_hr.png)
 
-*2563–2566 ft: the segment cropped from the box photo (left), the six cropped close-up photos before stitching (middle), and the stitched high-resolution mosaic (right).*
+*The six cropped close-up photos that were stitched, numbered in stitching order (left), beside the stitched high-resolution mosaic of 2563–2566 ft (right).*
 
 [`pyRockImageLab_1_core_photo_processing.ipynb`](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/pyRockImageLab_1_core_photo_processing.ipynb) is the full workflow notebook for your own data.
 
