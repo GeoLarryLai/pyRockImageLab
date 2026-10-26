@@ -7,7 +7,7 @@ with open("README-pypi.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="pyrockimagelab",
-    version="0.0.2",
+    version="0.0.3",
     author="Larry Syu-Heng Lai",
     author_email="larrysyuhenglai@gmail.com",
     description="Interactive tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis",

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrockimagelab"
-version = "0.0.2"
+version = "0.0.3"
 description = "Interactive tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis"
 readme = "README-pypi.md"
 authors = [{name = "Larry Syu-Heng Lai", email = "larrysyuhenglai@gmail.com"}]
@@ -29,7 +29,7 @@ heic = ["pillow-heif>=0.13"]
 gui = ["PyQt5>=5.15"]
 
 [project.urls]
-Homepage = "https://github.com/GeoLarryLai/pyRockImageLab"
+Homepage = "https://www.larrysyuhenglai.com/projects/pyRockImageLab/"
 Repository = "https://github.com/GeoLarryLai/pyRockImageLab.git"
 
 [project.scripts]

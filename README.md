@@ -1,8 +1,8 @@
 # pyRockImageLab
 
-![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg) ![PyPI downloads](https://img.shields.io/pypi/dm/pyrockimagelab.svg) [![pepy downloads](https://static.pepy.tech/badge/pyrockimagelab)](https://pepy.tech/project/pyrockimagelab)
+[![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab)
 
-v0.0.2
+v0.0.3
 
 **pyRockImageLab** (`import pyrockimagelab`) provides interactive tools to crop, ortho-warp, stitch, and mosaic geological core photographs, from low-res box photos (LR segments) to high-res detail mosaics (HR).
 

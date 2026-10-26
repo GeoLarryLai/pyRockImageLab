@@ -1,0 +1,23 @@
+{
+  "title": "pyRockImageLab",
+  "description": "Interactive tools for geological core and outcrop photograph processing: crop, ortho-warp, stitch and mosaic core-box photos for data collection and analysis.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lai, Larry Syu-Heng",
+      "orcid": "0000-0003-4589-9729"
+    }
+  ],
+  "license": "AGPL-3.0-or-later",
+  "keywords": [
+    "geology",
+    "core photographs",
+    "image processing",
+    "ortho-warp",
+    "image stitching",
+    "mosaic",
+    "sedimentology",
+    "python"
+  ],
+  "version": "0.0.3"
+}

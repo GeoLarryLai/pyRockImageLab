@@ -1,21 +1,103 @@
 # pyRockImageLab
 
-v0.0.2
+[![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab)
 
-**pyRockImageLab** (`pyrockimagelab`) is intended for **rock photograph** workflows: core-box crop / stitch / mosaic today, with room later for hand samples, outcrop photos, and ML-assisted identification.
+v0.0.3
 
-Development continues and a fuller release is on the way.
+**pyRockImageLab** (`import pyrockimagelab`) provides interactive tools to crop, ortho-warp, stitch, and mosaic geological core photographs, from low-res box photos (LR segments) to high-res detail mosaics (HR).
 
-## Release plan
+> [!NOTE]
+> Filesystem paths are required. The package does not ship defaults for a core-image root or any project-specific folder. Pass `folder`, `core_images_dir`, or `--root` from your notebook or CLI.
 
-- Early development and documentation are underway.
-- Package, example notebook, and docs will continue to land on GitHub.
-- Versioned PyPI releases will follow as the core-box tools mature.
+Larry Syu-Heng Lai  
+larry.lai@beg.utexas.edu · larrysyuhenglai@gmail.com  
+[Quantitative Clastics Laboratory](https://qcl.beg.utexas.edu), Bureau of Economic Geology, The University of Texas at Austin
 
-## Contact
+## Installation
 
-Larry Lai — larry.lai@beg.utexas.edu / larrysyuhenglai@gmail.com  
-Quantitative Clastics Laboratory, Bureau of Economic Geology, The University of Texas at Austin
+From [PyPI](https://pypi.org/project/pyrockimagelab/):
+
+```bash
+pip install pyrockimagelab
+```
+
+From this repo:
+
+```bash
+conda env create -f environment.yml
+conda activate pyrockimagelab
+pip install -e ".[heic,gui]"
+```
+
+Interactive picking needs a local matplotlib GUI backend (macOS `MacOSX`, otherwise Qt or Tk).
+
+## Citation
+
+Lai, L.S.-H. (2026) pyRockImageLab.
+
+Contact: larry.lai@beg.utexas.edu · larrysyuhenglai@gmail.com
+
+## Key Features
+
+- Crop a box photo into depth segments with a four-corner ortho-warp (`QuadPicker`).
+- Stitch high-res detail photos along a segment (`stitch_chain`) and build a mosaic.
+- Save corner picks in `_picks.json` so a later run can start from the same corners.
+- Command-line entry point: `pyrockimagelab`.
+
+## Example notebooks
+
+[`pyRockImageLab_1_core_photo_processing.ipynb`](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/pyRockImageLab_1_core_photo_processing.ipynb)
+
+The notebook only sets the folder path, segment count, and high-res photo ranges, then calls the package. Put your own core photos outside this repo and pass that folder in. This repository does not include core photos.
+
+Caller-supplied layout:
+
+```text
+{core_images_dir}/{UWI}/{depth-range}/          # source photos + _picks.json
+{core_images_dir}/{UWI}/{UWI}_{start}-{end}[_hr].png
+```
+
+```python
+import pyrockimagelab as pril
+
+pril.process_folder(
+    folder="/path/to/CoreImages/UWI/start-end",
+    uwi="UWI",
+)
+```
+
+```bash
+python -m pyrockimagelab.core_box.processing --root /path/to/CoreImages --uwi UWI --folder start-end
+```
+
+## Package structure
+
+```
+README.md
+README-pypi.md
+FUNCTION_DOCUMENTATION.md
+pyproject.toml
+setup.py
+environment.yml
+example_data/
+pyrockimagelab/
+    common/
+    image_processing/
+    core_box/
+```
+
+Function list: `FUNCTION_DOCUMENTATION.md`.
+
+## Dependencies
+
+Requires Python >=3.10.
+
+Installed with the package: numpy (>=1.20), opencv-python (>=4.5), Pillow (>=8.3), matplotlib (>=3.5).
+
+Optional extras:
+
+- `heic`: pillow-heif >=0.13
+- `gui`: PyQt5 >=5.15
 
 ## License
 
@@ -27,4 +109,8 @@ analysis
 Copyright (C) 2026  Larry Syu-Heng Lai
 ```
 
-GNU Affero General Public License v3 or later. See [LICENSE](LICENSE).
+pyRockImageLab is licensed under the GNU Affero General Public License 3.0 or later. See [LICENSE](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/LICENSE).
+
+## Related
+
+- **pyLogCrafter** (`pylogcrafter`) — well-log QC, normalization, imputation, facies, and viz companion package
