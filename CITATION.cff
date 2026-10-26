@@ -14,7 +14,7 @@ authors:
     orcid: "https://orcid.org/0000-0003-4589-9729"
 license: AGPL-3.0-or-later
 repository-code: "https://github.com/GeoLarryLai/pyRockImageLab"
-version: "0.0.3"
+version: "0.1.0"
 keywords:
   - geology
   - core photographs
