@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!-- Copyright (C) 2026 Larry Syu-Heng Lai -->
+<html lang="en"><head><meta charset="utf-8"><title>pyRockImageLab</title>
+<link rel="stylesheet" href="/shell/static/shell.css"><link rel="stylesheet" href="/static/app.css"></head>
+<body class="home">
+<header id="top"><span class="brand">pyRockImageLab</span><button id="homeBtn" class="ghost" title="Back to the start screen">⌂ Start</button>
+  <span class="doc" id="doc">No folder open</span>
+  <button id="quitBtn" class="ghost" title="Stop the app">Quit</button></header>
+<nav id="rail"></nav>
+<main id="main"><canvas id="cv" tabindex="0"></canvas>
+  <div id="zoomtools"><button id="fitBtn" title="Fit the whole image (F)">Fit</button><button id="zin" title="Zoom in">+</button><button id="zout" title="Zoom out">−</button><span id="coord"></span></div>
+  <div id="grid" hidden></div>
+  <div id="startScreen">
+    <div class="intro"><h1>pyRockImageLab</h1><p>Turn photos of rock core into clean, straightened images labelled with depth.<br>Choose what you want to do:</p></div>
+    <div class="cards">
+      <button class="card big" id="goCrop"><span class="ic">▭▭▭</span><h2>Crop core-box photo</h2>
+        <p>Open a photo of a whole core box, mark the corners of each core section, and save each section as its own straightened image labelled with depth.</p></button>
+      <button class="card big" id="goStitch"><span class="ic">▯▯▯→▮</span><h2>Stitch close-up photos</h2>
+        <p>Pick the close-up photos taken along one core section, trim each one, and join them into one long high-resolution image.</p></button>
+    </div>
+    <p class="note foot">Your choices are saved in each photo folder (<code>_picks.json</code>), so you can stop and continue later, or re-run them from a notebook.</p>
+  </div>
+</main>
+<aside id="side"><div class="head"><h2 id="stepTitle"></h2><p class="lead" id="stepLead"></p>
+  <div id="mainBtns"></div></div>
+  <div class="body" id="stepBody"></div></aside>
+<footer id="bar"><span class="help" id="help"></span><span id="progtxt"></span><span class="prog" id="prog"><i></i></span></footer>
+<div id="toast"></div>
+<script src="/shell/static/shell.js"></script><script src="/static/viewer.js"></script><script src="/static/app.js"></script>
+</body></html>

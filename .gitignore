@@ -1,14 +1,17 @@
-.DS_Store
-__pycache__/
-*.pyc
 *.egg-info/
-dist/
-build/
-.ipynb_checkpoints/
-.venv/
-.env
 *.env
-.pypirc
-outputs/
+*.pyc
 *.tif
 *.tiff
+.DS_Store
+.env
+.ipynb_checkpoints/
+.pypirc
+.venv/
+README_review.*
+__pycache__/
+build/
+dist/
+old codes/
+outputs/
+shots_readme/
