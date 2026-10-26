@@ -1,6 +1,6 @@
 # pyRockImageLab
 
-[![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656974.svg)](https://doi.org/10.5281/zenodo.23656974) [![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab)
 
 v0.0.3
 
@@ -33,7 +33,7 @@ Interactive picking needs a local matplotlib GUI backend (macOS `MacOSX`, otherw
 
 ## Citation
 
-Lai, L.S.-H. (2026) pyRockImageLab.
+Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.23656974
 
 Contact: larry.lai@beg.utexas.edu · larrysyuhenglai@gmail.com
 

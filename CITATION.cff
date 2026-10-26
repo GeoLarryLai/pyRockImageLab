@@ -3,6 +3,11 @@ message: "If you use this software, please cite it as below."
 title: "pyRockImageLab"
 abstract: "Interactive tools for geological core and outcrop photograph processing: crop, ortho-warp, stitch and mosaic core-box photos for data collection and analysis."
 type: software
+doi: "10.5281/zenodo.23656974"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23656974"
+    description: "Concept DOI for all versions"
 authors:
   - family-names: Lai
     given-names: "Larry Syu-Heng"
