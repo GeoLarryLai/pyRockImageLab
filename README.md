@@ -11,7 +11,7 @@ v0.0.3
 
 ![QuadPicker interface for selecting a core-box segment](docs/media/quadpicker_ui.png)
 
-*Picking the four corners of a core-box segment in QuadPicker (synthetic example image).*
+*Picking the four corners of a core-box segment in QuadPicker (example core box from `example_data/ExampleCore`).*
 
 Contact:
 
@@ -49,9 +49,15 @@ Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.236
 
 ## Example notebooks
 
-[`pyRockImageLab_1_core_photo_processing.ipynb`](pyRockImageLab_1_core_photo_processing.ipynb)
+[`pyRockImageLab_1_ExampleCore.ipynb`](pyRockImageLab_1_ExampleCore.ipynb) runs end to end on the small example set in `example_data/ExampleCore/` (one box photo, six close-up photos and saved corner picks, about 15 MB). It crops, stitches and ortho-corrects the close-ups into a high-resolution mosaic of the 2563–2566 ft segment and writes PNGs to `outputs/`. Set `INTERACTIVE = True` to re-pick corners in the Qt windows.
 
-The notebook only sets the folder path, segment count, and high-res photo ranges, then calls the package. Put your own core photos outside this repo and pass that folder in. This repository does not include core photos.
+![Box-photo segment and high-resolution mosaic for 2563–2566 ft](figures/ExampleCore_2563-2566_hr.png)
+
+*Segment 1 from the box photo (left) and the stitched high-resolution mosaic (right).*
+
+[`pyRockImageLab_1_core_photo_processing.ipynb`](pyRockImageLab_1_core_photo_processing.ipynb) is the full workflow notebook for your own data.
+
+That notebook only sets the folder path, segment count, and high-res photo ranges, then calls the package. Put your own core photos outside this repo and pass that folder in.
 
 Caller-supplied layout:
 
@@ -82,7 +88,9 @@ FUNCTION_DOCUMENTATION.md
 pyproject.toml
 setup.py
 environment.yml
-example_data/
+example_data/ExampleCore/        # anonymized example photos + _picks.json
+figures/
+pyRockImageLab_1_ExampleCore.ipynb
 pyrockimagelab/
     common/
     image_processing/

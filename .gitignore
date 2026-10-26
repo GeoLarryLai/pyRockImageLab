@@ -9,3 +9,6 @@ build/
 .env
 *.env
 .pypirc
+outputs/
+*.tif
+*.tiff

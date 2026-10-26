@@ -1,0 +1,5 @@
+prune example_data
+prune figures
+prune docs
+prune outputs
+global-exclude *.ipynb
