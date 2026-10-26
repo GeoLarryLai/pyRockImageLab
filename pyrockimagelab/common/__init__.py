@@ -32,14 +32,6 @@ from pyrockimagelab.common.require import (
     require_existing_dir,
     require_path,
 )
-from pyrockimagelab.common.ui import (
-    QuadPicker,
-    _DialogResult,
-    assign_hr_photos,
-    confirm_folder,
-    pick_box_photo,
-    show_progress_and_ask,
-)
 from pyrockimagelab.image_processing.stitch import (
     MATCH_RATIO,
     MAX_CANVAS_PIXELS,
@@ -86,13 +78,7 @@ __all__ = [
     "list_source_images",
     "discover_depth_folders",
     "filter_folders",
-    "QuadPicker",
-    "_DialogResult",
-    "confirm_folder",
-    "pick_box_photo",
-    "assign_hr_photos",
     "assess_progress",
-    "show_progress_and_ask",
     "reset_completion",
     "stitch_chain",
 ]

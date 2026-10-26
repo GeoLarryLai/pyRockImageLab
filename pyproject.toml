@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrockimagelab"
-version = "0.0.3"
-description = "Interactive tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis"
+version = "0.1.0"
+description = "Browser app and tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis"
 readme = "README-pypi.md"
-authors = [{name = "Larry Syu-Heng Lai", email = "larrysyuhenglai@gmail.com"}]
+authors = [{name = "Larry Syu-Heng Lai"}]
 license = "AGPL-3.0-or-later"
 license-files = ["LICENSE"]
 classifiers = [
@@ -22,11 +22,13 @@ dependencies = [
     "opencv-python>=4.5",
     "Pillow>=8.3",
     "matplotlib>=3.5",
+    "fastapi>=0.100",
+    "uvicorn>=0.23",
 ]
 
 [project.optional-dependencies]
 heic = ["pillow-heif>=0.13"]
-gui = ["PyQt5>=5.15"]
+test = ["pytest", "httpx"]
 
 [project.urls]
 Homepage = "https://www.larrysyuhenglai.com/projects/pyRockImageLab/"
@@ -34,7 +36,11 @@ Repository = "https://github.com/GeoLarryLai/pyRockImageLab.git"
 
 [project.scripts]
 pyrockimagelab = "pyrockimagelab.core_box.processing:main"
+pyrockimagelab-app = "pyrockimagelab.webapp:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pyrockimagelab*"]
+
+[tool.setuptools.package-data]
+"pyrockimagelab.webapp" = ["static/*", "shell/static/*"]

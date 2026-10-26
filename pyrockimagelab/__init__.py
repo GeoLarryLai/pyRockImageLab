@@ -1,11 +1,11 @@
-"""pyRockImageLab — interactive LR/HR core-photo crop, stitch, and mosaic tools.
+"""pyRockImageLab — crop core-box photos and stitch close-up core photos (browser app: ``pyrockimagelab-app``).
 
 Import
 ------
 >>> import pyrockimagelab as pril
 >>> help(pril.process_folder)  # required: folder, uwi, ...
 
-Version: 0.0.3
+Version: 0.1.0
 
 Required caller inputs (no CISR/CoreImages path defaults)
 ---------------------------------------------------------
@@ -24,7 +24,17 @@ from pyrockimagelab.core_box.processing import (
     process_hr_segment,
     process_hr_segments,
     process_lr_segments,
+    lr_segment_defaults,
+    lr_name_for_length,
+    crop_lr_segment,
+    save_lr_segment,
+    hr_default_name,
+    crop_hr_photo,
+    stitch_params_for,
+    stitch_hr_segment,
+    finish_hr_segment,
 )
+from pyrockimagelab.image_processing.warp import clamp_quad_to_image, trim_empty_rows
 from pyrockimagelab.common import (
     DEFAULT_HR_PHOTO_RANGES,
     DEFAULT_SEG_LENGTH_FT,
@@ -36,14 +46,11 @@ from pyrockimagelab.common import (
     N_SEGMENTS_DEFAULT,
     NFEATURES,
     PICKS_FILENAME,
-    QuadPicker,
     RANSAC_REPROJ,
     USE_HDR_GAINMAP,
     VALID_EXTS,
     WORK_MEGAPIX,
     assess_progress,
-    assign_hr_photos,
-    confirm_folder,
     default_hr_name_from_lr,
     discover_depth_folders,
     filter_folders,
@@ -53,13 +60,11 @@ from pyrockimagelab.common import (
     normalize_lr_seg_name,
     ortho_warp_quad,
     parse_folder_depth_range,
-    pick_box_photo,
     prefix_uwi_output_name,
     release_working_memory,
     reset_completion,
     save_at_dpi,
     save_picks,
-    show_progress_and_ask,
     stitch_chain,
 )
 
@@ -67,7 +72,7 @@ from pyrockimagelab.common import (
 require = common.require
 processing = core_box.processing
 
-__version__ = "0.0.3"
+__version__ = "0.1.0"
 
 __all__ = [
     "__version__",
@@ -83,8 +88,18 @@ __all__ = [
     "process_lr_segments",
     "process_hr_segments",
     "process_hr_segment",
+    "lr_segment_defaults",
+    "lr_name_for_length",
+    "crop_lr_segment",
+    "save_lr_segment",
+    "hr_default_name",
+    "crop_hr_photo",
+    "stitch_params_for",
+    "stitch_hr_segment",
+    "finish_hr_segment",
+    "clamp_quad_to_image",
+    "trim_empty_rows",
     "main",
-    "QuadPicker",
     "discover_depth_folders",
     "filter_folders",
     "list_source_images",
@@ -94,11 +109,7 @@ __all__ = [
     "save_at_dpi",
     "stitch_chain",
     "assess_progress",
-    "show_progress_and_ask",
     "reset_completion",
-    "confirm_folder",
-    "pick_box_photo",
-    "assign_hr_photos",
     "ortho_warp_quad",
     "parse_folder_depth_range",
     "normalize_lr_seg_name",

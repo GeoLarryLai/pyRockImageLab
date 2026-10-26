@@ -17,39 +17,16 @@ import os
 import re
 from pathlib import Path
 
-os.environ["PATH"] = str(Path.home() / "bin") + ":" + os.environ.get("PATH", "")
 
 import cv2
 import numpy as np
 from PIL import Image
 
-import matplotlib
 
 from pyrockimagelab.common.require import require_existing_dir, require_path
 
 
-def _configure_matplotlib_backend():
-    """Pick an interactive backend (MacOSX on macOS, else Qt, else Tk)."""
-    import sys
 
-    candidates = []
-    if sys.platform == "darwin":
-        candidates.append("MacOSX")
-    candidates.extend(["QtAgg", "Qt5Agg", "TkAgg"])
-    last_err = None
-    for backend in candidates:
-        try:
-            matplotlib.use(backend, force=True)
-            return backend
-        except Exception as e:
-            last_err = e
-    raise ImportError(
-        "No matplotlib GUI backend available. Install PyQt5: pip install PyQt5"
-    ) from last_err
-
-
-_MPL_BACKEND = _configure_matplotlib_backend()
-import matplotlib.pyplot as plt
 
 try:
     import pillow_heif
@@ -80,8 +57,10 @@ cv2.setNumThreads(6)
 
 
 def release_working_memory(quiet=False):
-    """Close matplotlib figures and collect large numpy/OpenCV allocations."""
-    plt.close("all")
+    """Close matplotlib figures (if matplotlib is in use) and collect large allocations."""
+    import sys
+    if "matplotlib.pyplot" in sys.modules:
+        sys.modules["matplotlib.pyplot"].close("all")
     gc.collect()
     if not quiet:
         print("  Memory cleared.")
