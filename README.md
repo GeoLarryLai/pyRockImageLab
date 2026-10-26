@@ -9,6 +9,10 @@ v0.0.3
 > [!NOTE]
 > Filesystem paths are required. The package does not ship defaults for a core-image root or any project-specific folder. Pass `folder`, `core_images_dir`, or `--root` from your notebook or CLI.
 
+![QuadPicker interface for selecting a core-box segment](docs/media/quadpicker_ui.png)
+
+*Picking the four corners of a core-box segment in QuadPicker (synthetic example image).*
+
 Contact:
 
 Larry Syu-Heng Lai (larrysyuhenglai@gmail.com)  
