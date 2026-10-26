@@ -9,9 +9,10 @@ v0.0.3
 > [!NOTE]
 > Filesystem paths are required. The package does not ship defaults for a core-image root or any project-specific folder. Pass `folder`, `core_images_dir`, or `--root` from your notebook or CLI.
 
-Larry Syu-Heng Lai  
-larrysyuhenglai@gmail.com  
-[Quantitative Clastics Laboratory](https://qcl.beg.utexas.edu), Bureau of Economic Geology, The University of Texas at Austin
+Contact:
+
+Larry Syu-Heng Lai (larrysyuhenglai@gmail.com)  
+The project was initiated when Larry was affiliated at the [Quantitative Clastics Laboratory](https://qcl.beg.utexas.edu/), Bureau of Economic Geology, The University of Texas at Austin
 
 ## Installation
 
@@ -34,8 +35,6 @@ Interactive picking needs a local matplotlib GUI backend (macOS `MacOSX`, otherw
 ## Citation
 
 Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.23656974
-
-Contact: larrysyuhenglai@gmail.com
 
 ## Key Features
 
