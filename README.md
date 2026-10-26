@@ -53,7 +53,7 @@ Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.236
 
 ![Box-photo segment and high-resolution mosaic for 2563–2566 ft](figures/ExampleCore_2563-2566_hr.png)
 
-*Segment 1 from the box photo (left) and the stitched high-resolution mosaic (right).*
+*2563–2566 ft: the segment cropped from the box photo (left), the six cropped close-up photos before stitching (middle), and the stitched high-resolution mosaic (right).*
 
 [`pyRockImageLab_1_core_photo_processing.ipynb`](pyRockImageLab_1_core_photo_processing.ipynb) is the full workflow notebook for your own data.
 

@@ -61,7 +61,7 @@ from pyrockimagelab.image_processing.stitch import (
     WORK_MEGAPIX,
     stitch_chain,
 )
-from pyrockimagelab.image_processing.warp import _apply_hdr_enhancement, ortho_warp_quad
+from pyrockimagelab.image_processing.warp import _apply_hdr_enhancement, clamp_quad_to_image, ortho_warp_quad, trim_empty_rows
 
 
 def _hr_segment_name(seg_num, n_segments, picks, folder, uwi):
@@ -447,7 +447,7 @@ def process_hr_segment(folder, uwi, seg_num, n_segments, photo_names, segment_ph
     if mosaic_quad is not None:
         picks[mosaic_quad_key] = [[float(x), float(y)] for x, y in mosaic_quad]
         save_picks(folder, picks)
-        mosaic = ortho_warp_quad(mosaic, mosaic_quad)
+        mosaic = trim_empty_rows(ortho_warp_quad(mosaic, clamp_quad_to_image(mosaic_quad, mosaic)))
         print(f"  Ortho-corrected mosaic: {mosaic.shape[1]} x {mosaic.shape[0]} px")
     else:
         print("  Skipped mosaic ortho (saving stitched mosaic as-is)")

@@ -9,10 +9,12 @@ from pyrockimagelab.image_processing.stitch import (
     WORK_MEGAPIX,
     stitch_chain,
 )
-from pyrockimagelab.image_processing.warp import _apply_hdr_enhancement, ortho_warp_quad
+from pyrockimagelab.image_processing.warp import _apply_hdr_enhancement, clamp_quad_to_image, ortho_warp_quad, trim_empty_rows
 
 __all__ = [
     "ortho_warp_quad",
+    "clamp_quad_to_image",
+    "trim_empty_rows",
     "_apply_hdr_enhancement",
     "stitch_chain",
     "NFEATURES",
