@@ -15,3 +15,7 @@ dist/
 old codes/
 outputs/
 shots_readme/
+
+# local planning notes
+NOTES.md
+WEBAPP_PLAN.md
