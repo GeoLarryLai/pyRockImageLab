@@ -65,22 +65,28 @@ Both tools start the same way: in **Choose a folder**, type the project folder (
 
 **Crop core-box photo**
 
+This tool cuts each core section out of a photo of a whole core box. Watch it once, then follow the steps below.
+
+[![Demo: cropping core sections from a core-box photo](figures/videos/pyRockImageLab_crop_demo.webp)](figures/videos/pyRockImageLab_crop_demo.mp4)
+
+*Sped-up demo. Click it to [watch the 1080p video](figures/videos/pyRockImageLab_crop_demo.mp4) (about 40 seconds).*
+
 1. *Choose the box photo* — click the photo of the whole core box, then press **Use this photo**.
 2. *Mark core sections* — set how many core sections the box holds, then click the four corners of each section (drag a corner to adjust). Type each section's length in feet; the depth and file name fill in automatically. **Preview** shows the straightened section.
 3. *Saved images* — press **Save 3 section images** (the number follows your sections). Each section is saved as `{well}_{top}-{bottom}.png` and `.tif` (300 dpi) in the well folder.
 
-![Marking core sections on a box photo](figures/app_crop_mark.png)
-
 **Stitch close-up photos**
+
+This tool joins several close-up photos of one core section into one long, sharp image. Watch it once, then follow the steps below.
+
+[![Demo: joining close-up photos into one long image](figures/videos/pyRockImageLab_stitch_demo.webp)](figures/videos/pyRockImageLab_stitch_demo.mp4)
+
+*Sped-up demo. Click it to [watch the 1080p video](figures/videos/pyRockImageLab_stitch_demo.mp4) (about 40 seconds).*
 
 1. *Choose close-up photos* — pick a core section, click its close-up photos in order (top of the core first), then press **Use these photos**.
 2. *Trim each photo* — click the four corners of the core in each photo to cut away the background (or press **Use whole photo**), then **Next: join the photos**.
 3. *Join the photos* — **Join photos** matches overlapping features and joins the photos into one long image. If the result looks wrong, change the matching settings and join again.
 4. *Straighten and save* — adjust the four corners of the joined image and press **Save image**. It is saved as `{well}_{top}-{bottom}_hr.png` and `.tif` (600 dpi) in the well folder.
-
-![Trimming one close-up photo](figures/app_stitch_trim.png)
-
-![Straightening the joined image before saving](figures/app_stitch_straighten.png)
 
 You can stop at any time; everything you saved stays on disk, and the app shows where you left off next time.
 
