@@ -5,7 +5,7 @@ Import
 >>> import pyrockimagelab as pril
 >>> help(pril.process_folder)  # required: folder, uwi, ...
 
-Version: 0.1.0
+Version: 0.1.1
 
 Required caller inputs (no CISR/CoreImages path defaults)
 ---------------------------------------------------------
@@ -72,7 +72,7 @@ from pyrockimagelab.common import (
 require = common.require
 processing = core_box.processing
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "__version__",

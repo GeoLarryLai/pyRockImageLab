@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrockimagelab"
-version = "0.1.0"
+version = "0.1.1"
 description = "Browser app and tools for core and outcrop image processing, data collection, and automated geological and geomorphic classification and analysis"
 readme = "README-pypi.md"
 authors = [{name = "Larry Syu-Heng Lai"}]
