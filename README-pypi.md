@@ -154,7 +154,3 @@ Optional extras:
 
 - `heic`: pillow-heif >=0.13
 - `test`: pytest, httpx
-
-## Related
-
-- **pyLogCrafter** (`pylogcrafter`) — well-log QC, normalization, imputation, facies, and viz companion package
