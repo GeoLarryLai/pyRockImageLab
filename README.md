@@ -33,7 +33,7 @@ From this repo:
 ```bash
 conda env create -f environment.yml
 conda activate pyrockimagelab
-pip install -e ".[heic]"
+pip install -e .
 ```
 
 No Qt or other GUI toolkit is needed; the app runs in your web browser.
@@ -150,9 +150,6 @@ Function list: `FUNCTION_DOCUMENTATION.md`.
 
 Requires Python >=3.10.
 
-Installed with the package: numpy (>=1.20), opencv-python (>=4.5), Pillow (>=8.3), matplotlib (>=3.5, for notebook figures), fastapi (>=0.100), uvicorn (>=0.23).
+Installed with the package: numpy (>=1.20), opencv-python (>=4.5), Pillow (>=8.3), matplotlib (>=3.5, for notebook figures), fastapi (>=0.100), uvicorn (>=0.23), pillow-heif (>=0.13, for HEIC photos).
 
-Optional extras:
-
-- `heic`: pillow-heif >=0.13
-- `test`: pytest, httpx
+Tests: `pip install -r requirements-dev.txt && python -m pytest`.

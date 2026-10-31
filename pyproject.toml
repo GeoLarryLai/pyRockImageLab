@@ -24,11 +24,8 @@ dependencies = [
     "matplotlib>=3.5",
     "fastapi>=0.100",
     "uvicorn>=0.23",
+    "pillow-heif>=0.13",
 ]
-
-[project.optional-dependencies]
-heic = ["pillow-heif>=0.13"]
-test = ["pytest", "httpx"]
 
 [project.urls]
 Homepage = "https://www.larrysyuhenglai.com/projects/pyRockImageLab/"

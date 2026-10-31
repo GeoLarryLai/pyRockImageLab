@@ -27,11 +27,8 @@ setup(
         "matplotlib>=3.5",
         "fastapi>=0.100",
         "uvicorn>=0.23",
+        "pillow-heif>=0.13",
     ],
-    extras_require={
-        "heic": ["pillow-heif>=0.13"],
-        "test": ["pytest", "httpx"],
-    },
     entry_points={
         "console_scripts": [
             "pyrockimagelab=pyrockimagelab.core_box.processing:main",

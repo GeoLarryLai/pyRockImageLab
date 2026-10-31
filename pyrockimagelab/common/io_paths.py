@@ -74,7 +74,7 @@ def load_any_image(path):
     ext = p.suffix.lower()
     if ext in (".heic", ".heif"):
         if not HEIC_OK:
-            raise RuntimeError("pillow_heif missing; cannot read HEIC.")
+            raise RuntimeError("pillow_heif missing; cannot read HEIC (pip install pillow-heif).")
         return np.asarray(Image.open(p).convert("RGB"))
     if ext in (".tif", ".tiff"):
         arr = cv2.imread(str(p), cv2.IMREAD_UNCHANGED)
