@@ -40,7 +40,7 @@ No Qt or other GUI toolkit is needed; the app runs in your web browser.
 
 ## Citation
 
-Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, https://doi.org/10.5281/zenodo.23656974
+Lai, L.S.-H. (2026) pyRockImageLab. *Zenodo*, [https://doi.org/10.5281/zenodo.23656974](https://doi.org/10.5281/zenodo.23656974)
 
 ## Key Features
 
