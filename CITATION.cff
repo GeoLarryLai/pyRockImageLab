@@ -9,8 +9,8 @@ identifiers:
     value: "10.5281/zenodo.23656974"
     description: "Concept DOI for all versions"
   - type: doi
-    value: "10.5281/zenodo.23679881"
-    description: "Version DOI for v0.1.0"
+    value: "10.5281/zenodo.23833096"
+    description: "Version DOI for v0.1.1"
 authors:
   - family-names: Lai
     given-names: "Larry Syu-Heng"
