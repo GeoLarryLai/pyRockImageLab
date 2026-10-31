@@ -1,6 +1,6 @@
 # pyRockImageLab
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656974.svg)](https://doi.org/10.5281/zenodo.23656974) [![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656974.svg)](https://doi.org/10.5281/zenodo.23656974) [![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab) [![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/LICENSE)
 
 v0.1.0
 
@@ -154,18 +154,6 @@ Optional extras:
 
 - `heic`: pillow-heif >=0.13
 - `test`: pytest, httpx
-
-## License
-
-```text
-Program: pyRockImageLab
-Interactive tools for core and outcrop image processing, data
-collection, and automated geological and geomorphic classification and
-analysis
-Copyright (C) 2026  Larry Syu-Heng Lai
-```
-
-pyRockImageLab is licensed under the GNU Affero General Public License 3.0 or later. See [LICENSE](https://github.com/GeoLarryLai/pyRockImageLab/blob/main/LICENSE).
 
 ## Related
 
