@@ -1,8 +1,11 @@
 <p align="center"><img src="image/logo.png" alt="pyRockImageLab" width="220"></p>
+<p align="center">
+<a href="https://doi.org/10.5281/zenodo.23656974"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23656974-blue" alt="DOI"></a> <a href="https://github.com/GeoLarryLai/pyRockImageLab/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0--or--later-lightgrey" alt="License"></a>
+<br>
+<a href="https://pypi.org/project/pyrockimagelab/"><img src="https://img.shields.io/pypi/pyversions/pyrockimagelab?color=orange" alt="Python versions"></a> <a href="https://pypi.org/project/pyrockimagelab/"><img src="https://img.shields.io/pypi/v/pyrockimagelab?color=orange" alt="PyPI version"></a> <a href="https://pepy.tech/projects/pyrockimagelab"><img src="https://img.shields.io/pepy/dt/pyrockimagelab?label=pypi%20downloads&color=orange" alt="PyPI downloads"></a>
+</p>
 
 # pyRockImageLab
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656974.svg)](https://doi.org/10.5281/zenodo.23656974) [![PyPI version](https://img.shields.io/pypi/v/pyrockimagelab.svg)](https://pypi.org/project/pyrockimagelab/) [![PyPI downloads](https://static.pepy.tech/badge/pyrockimagelab/month)](https://pepy.tech/project/pyrockimagelab) [![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](./LICENSE)
 
 **pyRockImageLab** (`import pyrockimagelab`) turns geological core photographs into clean, depth-labelled images. It crops each core section out of a photo of a whole core box, and it joins (stitches) close-up photos of one section into one long high-resolution image. A small browser app does the clicking; the package functions do the rest, also from notebooks with no windows.
 
