@@ -28,7 +28,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://www.larrysyuhenglai.com/projects/pyRockImageLab/"
+Homepage = "https://www.geolarrylai.com/projects/pyRockImageLab/"
 Repository = "https://github.com/GeoLarryLai/pyRockImageLab.git"
 
 [project.scripts]
