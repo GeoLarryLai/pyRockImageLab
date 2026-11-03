@@ -29,6 +29,12 @@ From [PyPI](https://pypi.org/project/pyrockimagelab/):
 pip install pyrockimagelab
 ```
 
+or from `conda-forge` repository with `conda`:
+
+```bash
+conda install pyrockimagelab
+```
+
 From this repo:
 
 ```bash
