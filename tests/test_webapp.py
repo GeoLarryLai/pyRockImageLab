@@ -114,3 +114,17 @@ def test_stitch_tool_assign_and_trim(tmp_path):
 def test_no_gui_imports():
     import sys
     assert not any(m.startswith(("PyQt", "PySide", "matplotlib.pyplot")) for m in sys.modules)
+
+
+def test_package_logo_and_separate_credits(tmp_path):
+    c = TestClient(create_app(root=tmp_path, testing=True))
+    html = c.get("/").text
+    assert 'class="brand" title="pyRockImageLab"' in html
+    assert html.count('class="home-logo"') == 1
+    assert '<h1>pyRockImageLab</h1>' not in html
+    assert '<footer id="bar">' in html
+    assert html.index('<footer id="bar">') < html.index('<footer class="app-credits"')
+    assert 'Project by Larry Syu-Heng Lai, PhD.' in html
+    assert 'AGPL-3.0 or later license' in html
+    logo = c.get("/static/logo.png")
+    assert logo.status_code == 200 and logo.content.startswith(b"\x89PNG\r\n\x1a\n")

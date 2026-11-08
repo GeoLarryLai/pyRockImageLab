@@ -8,16 +8,13 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23656974"
     description: "Concept DOI for all versions"
-  - type: doi
-    value: "10.5281/zenodo.23833096"
-    description: "Version DOI for v0.1.1"
 authors:
   - family-names: Lai
     given-names: "Larry Syu-Heng"
     orcid: "https://orcid.org/0000-0003-4589-9729"
 license: AGPL-3.0-or-later
 repository-code: "https://github.com/GeoLarryLai/pyRockImageLab"
-version: "0.1.1"
+version: "0.1.2"
 keywords:
   - geology
   - core photographs

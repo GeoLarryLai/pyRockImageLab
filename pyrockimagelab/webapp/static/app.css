@@ -4,7 +4,7 @@
 #cv.pan{cursor:grabbing}
 #zoomtools{position:absolute;left:10px;top:10px;display:flex;gap:4px;align-items:center;z-index:3}
 #zoomtools button{background:rgba(255,255,255,.92);padding:3px 9px} #coord{color:#ddd;font-size:11px;margin-left:6px;text-shadow:0 1px 2px #000}
-body.home{grid-template:"top" 44px "main" 1fr "bar" 30px/1fr} body.home #rail,body.home #side,body.home #homeBtn{display:none}
+body.home{grid-template:"top" 44px "main" 1fr "bar" 30px "credits" minmax(34px,auto)/1fr} body.home #rail,body.home #side,body.home #homeBtn{display:none}
 #startScreen{position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:30px;z-index:6}
 body:not(.home) #startScreen{display:none}
 .intro{text-align:center} .intro h1{margin:0 0 6px;font-weight:600;font-size:26px} .intro p{color:var(--mute);margin:0;font-size:14px}
@@ -34,3 +34,13 @@ details summary{cursor:pointer;color:var(--mute);margin:10px 0 4px}
 .strip{display:flex;gap:6px;overflow:auto;padding:4px 0} .strip img{height:64px;border-radius:5px;border:2px solid transparent;cursor:pointer;background:#ddd}
 .strip img.cur{border-color:var(--accent)} .strip img.ok{outline:2px solid var(--ok);outline-offset:-4px}
 code{font-size:11.5px;background:#f0f0ee;padding:0 3px;border-radius:3px}
+
+/* Package identity and credits, outside the workflow and help/progress bar. */
+body{grid-template-areas:"top top top" "rail main side" "bar bar bar" "credits credits credits";grid-template-rows:44px minmax(0,1fr) 30px minmax(34px,auto)}
+#top .brand{position:relative;display:block;overflow:hidden;width:34px;height:34px;flex:0 0 34px}
+#top .brand img{position:absolute;width:40px;height:auto;max-width:none;left:-3px;top:-2px}
+.home-logo{width:130px;max-width:100%;height:auto;display:block;margin:0 auto}
+.app-credits{grid-area:credits;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:4px 16px;padding:7px 16px;border-top:1px solid var(--line);background:var(--panel);color:var(--mute);font-size:11.5px}
+@media(max-width:600px){.home-logo{width:108px}.app-credits{padding:7px 10px}}
+
+body.home{grid-template-areas:"top" "main" "bar" "credits";grid-template-rows:44px minmax(0,1fr) 30px minmax(34px,auto)}
