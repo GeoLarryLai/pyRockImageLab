@@ -68,8 +68,6 @@ This opens the app in your web browser (stop it with **Quit**, or Ctrl+C in the 
 - **Crop core-box photo** — Open a photo of a whole core box, mark the corners of each core section, and save each section as its own straightened image labelled with depth.
 - **Stitch close-up photos** — Pick the close-up photos taken along one core section, trim each one, and join them into one long high-resolution image.
 
-![The app's start screen](figures/app_start.png)
-
 Both tools start the same way: in **Choose a folder**, type the project folder (laid out as `Project / Well name / start-end`) and press **Show photo folders**. Every depth folder is listed with what is already done; click the one to work on.
 
 **Crop core-box photo**
