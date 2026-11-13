@@ -158,3 +158,7 @@ Requires Python >=3.10.
 Installed with the package: numpy (>=1.20), opencv-python (>=4.5), Pillow (>=8.3), matplotlib (>=3.5, for notebook figures), fastapi (>=0.100), uvicorn (>=0.23), pillow-heif (>=0.13, for HEIC photos).
 
 Tests: `pip install -r requirements-dev.txt && python -m pytest`.
+
+## License
+
+Code: **AGPL-3.0-or-later**. You are free to use, modify, and share it; anyone distributing modified code or running a modified version as a network service must share its source under the same license.

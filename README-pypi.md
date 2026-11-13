@@ -10,4 +10,4 @@ The package requires Python 3.10 or newer. Installation details, examples, and d
 
 Citation: Lai, L. S.-H. (2026). pyRockImageLab. [Zenodo](https://doi.org/10.5281/zenodo.23656974).
 
-License: AGPL-3.0-or-later.
+License: AGPL-3.0-or-later. You are free to use, modify, and share it; anyone distributing modified code or running a modified version as a network service must share its source under the same license.
